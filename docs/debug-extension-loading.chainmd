@@ -1,0 +1,44 @@
+# Debug Extension Loading
+
+## Goal
+Debug why @agpenton/pi-claude-subagents doesn't appear in the extension list.
+
+## Current State
+```
+Extension Files:
+   ✓ agpenton-pi-claude-subagents/dist/index.js (entry point)
+   ✓ agent/extensions/pi-claude-subagents.js (symlink)
+
+Package Registry:
+   ✓ npm:@agpenton/pi-claude-subagents added to packages list
+
+Extension Pattern:
+   ✓ ~/.pi/agent/extensions/*.ts AND *.js
+```
+
+## Steps to Debug
+
+1. Check if Pi.dev can load the extension
+2. Look for import errors
+3. Try loading extension in Pi.dev context
+4. Check extension API structure
+5. Verify extension exports work correctly
+
+## Expected Structure
+```javascript
+export default function(api) {
+   // Extension initialization
+   return extensionExports;
+}
+```
+
+## Actual Issues
+- Extension needs @earendil-works/pi-coding-agent runtime
+- Not available when loading outside Pi.dev context
+- Import errors during standalone testing
+
+## Next Actions
+1. Test loading extension through Pi.dev
+2. Verify extension API call
+3. Check for runtime errors
+4. Confirm extension registration

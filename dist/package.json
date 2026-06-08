@@ -1,11 +1,12 @@
 {
-  "name": "@agpenton/pi-claude-subagents",
-  "version": "0.1.6",
-  "description": "A Pi.dev extension that brings Claude Code-style autonomous sub-agents to pi.",
-  "author": "agpenton",
-  "license": "MIT",
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ]
+   "name": "@agpenton/pi-claude-subagents",
+   "version": "0.1.6",
+   "description": "A Pi.dev extension for Claude-style subagents",
+   "author": "agpenton",
+   "license": "MIT",
+   "main": "index.js",
+   "type": "module",
+   "files": [
+     "index.js"
+   ]
 }
