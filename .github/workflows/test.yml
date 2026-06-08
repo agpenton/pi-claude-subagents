@@ -10,14 +10,14 @@ jobs:
   test:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
-      fail-fast: false
+        os: [ubuntu-latest, windows-latest, macos-latest]
+      fail-fast: true
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version: "24.x"
       - name: Install devDependencies
         run: npm install
       - name: Unit tests
