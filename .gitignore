@@ -1,2 +1,6 @@
-**/**/node_modules
-*.bk
+# Testing configs
+/vitest.config.ts
+/tsconfig.json
+
+# Build dependencies (optional)
+/node_modules

@@ -4,18 +4,21 @@
   "description": "A Pi.dev extension that brings Claude Code-style autonomous sub-agents to pi.",
   "author": "agpenton",
   "license": "MIT",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "node package-build.js",
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest --passWithNoTests",
     "test:coverage": "vitest run --coverage --passWithNoTests"
-  },
+   },
   "devDependencies": {
     "@types/node": "^25.5.0",
     "@vitest/coverage-v8": "^4.1.8",
     "typescript": "^6.0.0",
     "vitest": "^4.0.18"
-  }
+   },
+  "files": [
+     "dist/index.js"
+   ]
 }
