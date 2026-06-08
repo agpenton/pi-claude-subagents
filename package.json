@@ -1,6 +1,6 @@
 {
   "name": "@agpenton/pi-claude-subagents",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A Pi.dev extension that brings Claude Code-style autonomous sub-agents to pi.",
   "author": "agpenton",
   "license": "MIT",
@@ -11,14 +11,14 @@
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest --passWithNoTests",
     "test:coverage": "vitest run --coverage --passWithNoTests"
-   },
+  },
   "devDependencies": {
     "@types/node": "^25.5.0",
     "@vitest/coverage-v8": "^4.1.8",
     "typescript": "^6.0.0",
     "vitest": "^4.0.18"
-   },
+  },
   "files": [
-     "dist/index.js"
-   ]
+    "dist/index.js"
+  ]
 }
